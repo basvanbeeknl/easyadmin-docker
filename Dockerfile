@@ -4,7 +4,7 @@
 
 
 # https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact
-ARG PHP_VERSION=8.1
+ARG PHP_VERSION=8.0.13
 ARG CADDY_VERSION=2
 
 # "php" stage
@@ -82,7 +82,7 @@ ENV PATH="${PATH}:/root/.composer/vendor/bin"
 WORKDIR /srv/app
 
 # Allow to choose skeleton
-ARG SKELETON="symfony/skeleton"
+ARG SKELETON="easyCorp/easyadmin-demo"
 ENV SKELETON ${SKELETON}
 
 # Allow to use development versions of Symfony
