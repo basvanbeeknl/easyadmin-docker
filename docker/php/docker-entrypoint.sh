@@ -18,8 +18,8 @@ if [ "$1" = 'php-fpm' ] || [ "$1" = 'php' ] || [ "$1" = 'bin/console' ]; then
 	# The first time volumes are mounted, the project needs to be recreated
 	if [ ! -f composer.json ]; then
 		CREATION=1
-		rm -r tmp
-		mkdir tmp
+		#rm -r tmp
+		#mkdir tmp
 		composer create-project "$SKELETON $SYMFONY_VERSION" tmp --stability="$STABILITY" --prefer-dist --no-progress --no-interaction --no-install
 
 		cd tmp
