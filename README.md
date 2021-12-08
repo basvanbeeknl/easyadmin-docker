@@ -1,5 +1,5 @@
 Symfony EasyAdmin Demo Docker
-==========================
+=============================
 A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony](https://symfony.com) web framework, with full [HTTP/2](https://symfony.com/doc/current/weblink.html), HTTP/3 and HTTPS support.
 
 ![CI](https://github.com/bvbmedia/easyadmin-docker/workflows/CI/badge.svg)
@@ -24,8 +24,6 @@ main features of EasyAdmin, a popular admin generator for [Symfony][2] applicati
 * [Vulcain](https://vulcain.rocks) support
 * Just 2 services (PHP FPM and Caddy server)
 * Super-readable configuration
-
-**Enjoy!**
 
 ## Docs
 
