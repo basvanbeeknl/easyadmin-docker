@@ -58,6 +58,17 @@ services:
 ###> symfony/mercure-bundle ###
 ###< symfony/mercure-bundle ###
 
+  node:
+    depends_on:
+      - php
+    image: nikolaik/python-nodejs:latest
+    ports:
+      - "8080:8080"
+    command: >
+      sh -c "yarn install && yarn encore dev --watch"
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app:rw
 volumes:
   php_socket:
   caddy_data:

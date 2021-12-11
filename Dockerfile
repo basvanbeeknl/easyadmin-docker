@@ -100,6 +100,9 @@ RUN composer create-project "${SKELETON} ${SYMFONY_VERSION}" . --stability=$STAB
 ###> recipes ###
 ###< recipes ###
 
+# BVB Media: install assets
+RUN bin/console assets:install
+
 COPY . .
 
 RUN set -eux; \
